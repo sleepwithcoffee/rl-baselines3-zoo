@@ -55,6 +55,12 @@ try:
 except ImportError:
     minigrid = None
 
+try:
+    # 2048game-v0
+    import gym_2048.envs
+except ImportError:
+    gym_2048 = None
+
 
 # Register no vel envs
 def create_no_vel_env(env_id: str):
